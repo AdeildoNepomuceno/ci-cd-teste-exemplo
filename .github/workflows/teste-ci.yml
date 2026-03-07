@@ -12,11 +12,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    # strategy:
-    #   matrix:
-    #     node-version: [18.x, 20.x, 22.x]
-    #     # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - uses: actions/checkout@v4
     - name: Use Node.js
@@ -25,7 +20,7 @@ jobs:
         node-version: 18
         cache: 'npm'
     - name: Instalar dependencias
-    - run: npm install
+      run: npm install
 
     - name: Executar testes
-    - run: npm test
+      run: npm test
