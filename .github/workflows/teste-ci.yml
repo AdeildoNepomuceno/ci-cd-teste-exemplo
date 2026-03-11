@@ -26,7 +26,7 @@ jobs:
       run: npm test
 
     - name: Gerar relatorio allure
-      run: "report:generate"
+      run: "npm run report:generate"
 
     - name: Publicar relatorio no GH pages
       uses: peaceiris/actions-gh-pages@v4

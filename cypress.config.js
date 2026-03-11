@@ -10,6 +10,6 @@ module.exports = defineConfig({
       });
       return config;
     },
-    video: true
+    video: true 
   },
 });
